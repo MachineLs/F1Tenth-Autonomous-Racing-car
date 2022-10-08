@@ -1,5 +1,5 @@
 # F1Tenth-Autonomous-Racing-car
-F1Tenth Autonomous Racing car implment robotics and machine learning algorithms
+F1Tenth Autonomous Racing car with well-known robotics and machine learning algorithms to make robot autonomous.
 
 1. Platform: ROS + F1tenth Simulator
 2. Mobility: Rigid Body Kinematics/Dynamics (2.3-2.3.1.5, p35-42)
