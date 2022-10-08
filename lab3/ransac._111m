@@ -1,0 +1,48 @@
+function [shift] = ransac(data1,data2)
+%     bestModel = [];
+%     bestInliers = [];
+%     bestOutliers = [];
+%     bestError = inf;
+% 
+%     iterations = 100;
+%     N = 200;
+%     for i=1:iterations
+%         
+%     randomP = randperm(N);
+%     p1 = [ data1(randomP(1),1), data1(randomP(1),2) ];
+%     p2 = [ data2(randomP(2),1), data2(randomP(2),2) ];
+% 
+%     inliers = [];
+%     outliers = [];
+%     ni = 0;
+%     no = 0;
+% 
+%     a_model = ( p1(2) - p2(2) )/ ( p1(1) - p2(1) );
+%     b_model = p1(2) - a_model*p1(1);
+% 
+%     totalError = 0;
+% 
+%     for p=1:N
+%         point = data1(:,p);
+%         error = abs( data1(1,p)*a_model + b_model - data1(2,p) )/ sqrt( a_model^2 + 1);
+% 
+%         if( thresError < error )
+%             outliers(:,no+1) = point;
+%             no = no+1;
+%         else 
+%             totalError = totalError + error;
+%             inliers(:,ni+1) = point;
+%             ni = ni+1;
+%         end
+%     end % data iteration end
+% 
+%     % check model
+% 
+%     if ( bestError > totalError && d < ni )
+%         bestModel = [a_model,b_model];
+%         bestInliers = inliers;
+%         bestOutliers = outliers;
+%         bestError = totalError;
+    end
+    end 
+end
