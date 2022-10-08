@@ -1,0 +1,6 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros" args="$(find lab4)/world/playground.world" />
+        <node name="astar" pkg="lab4" type="astar.py" args="$(find lab4)/map/map.txt" />
+	<param name="goalx" type="double" value = "4.5" />
+	<param name="goaly" type="double" value = "9.0" />
+</launch>
